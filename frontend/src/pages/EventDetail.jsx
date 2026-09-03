@@ -77,7 +77,7 @@ const EventDetail = () => {
           <h2>📅 {event.title}</h2>
           <p>Event details and management</p>
         </div>
-        <div style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="header-actions">
           <button className="btn btn-warning" onClick={() => setModal('edit')}>✏️ Edit</button>
           <button className="btn btn-danger" onClick={() => setModal('delete')}>🗑 Delete</button>
         </div>
@@ -126,7 +126,7 @@ const EventDetail = () => {
             </div>
           )}
         </div>
-        <div className="card-footer" style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="card-footer detail-footer-actions">
           <button className="btn btn-secondary btn-sm" onClick={() => navigate('/events')}>← Back to Events</button>
           <button className="btn btn-primary btn-sm" onClick={() => navigate(`/registrations?eventId=${event._id}`)}>
             📝 View Registrations

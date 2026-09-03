@@ -63,7 +63,7 @@ const VenueDetail = () => {
           <h2>🏛️ {venue.name}</h2>
           <p>Venue details and management</p>
         </div>
-        <div style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="header-actions">
           <button className="btn btn-warning" onClick={() => setModal('edit')}>
             ✏️ Edit
           </button>
@@ -102,7 +102,7 @@ const VenueDetail = () => {
             </div>
           </div>
         </div>
-        <div className="card-footer" style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="card-footer detail-footer-actions">
           <button className="btn btn-secondary btn-sm" onClick={() => navigate('/venues')}>
             ← Back to Venues
           </button>

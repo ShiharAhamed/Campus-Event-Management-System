@@ -74,7 +74,7 @@ const RegistrationDetail = () => {
           <h2>📝 {reg.studentName}</h2>
           <p>Registration details and management</p>
         </div>
-        <div style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="header-actions">
           <button className="btn btn-warning" onClick={() => setModal('edit')}>✏️ Edit</button>
           <button className="btn btn-danger" onClick={() => setModal('delete')}>🗑 Delete</button>
         </div>
@@ -119,7 +119,7 @@ const RegistrationDetail = () => {
             </div>
           </div>
         </div>
-        <div className="card-footer" style={{ display: 'flex', gap: '0.6rem' }}>
+        <div className="card-footer detail-footer-actions">
           <button className="btn btn-secondary btn-sm" onClick={() => navigate('/registrations')}>← Back</button>
           {reg.eventId && (
             <button className="btn btn-primary btn-sm" onClick={() => navigate(`/events/${reg.eventId._id}`)}>
